@@ -35,9 +35,9 @@ public class RecipeControllerTest {
         MockitoAnnotations.openMocks(this);
 
         controller = new RecipeController(recipeService);
-        mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
-//                .setControllerAdvice(new ControllerExceptionHandler())
-//                .build();
+        mockMvc = MockMvcBuilders.standaloneSetup(controller)
+                .setControllerAdvice(new ControllerExceptionHandler())
+                .build();
     }
 
     @Test
