@@ -21,7 +21,7 @@ public class Notes {
     private Recipe recipe;
 
     @Lob
-    private String description;
+    private String recipeNotes;
 
     @Override
     public boolean equals(Object o) {

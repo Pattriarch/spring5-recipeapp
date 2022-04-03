@@ -10,7 +10,6 @@ import java.util.Set;
 
 @Getter
 @Setter
-@ToString
 @RequiredArgsConstructor
 @Entity
 public class Recipe {
@@ -34,7 +33,8 @@ public class Recipe {
     private Set<Ingredient> ingredients = new HashSet<>();
 
     @Lob
-    private Byte[] image;
+    private Byte[] image; // Примитивы могут быть нулями, поэтому используется не byte, а Byte
+    // К тому же рекомендуется Hibernate'ом использовать упакованные типы
 
     @OneToOne(cascade = CascadeType.ALL)
     private Notes notes;
