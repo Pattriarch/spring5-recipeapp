@@ -3,7 +3,6 @@ package spring.framework.spring5recipeapp.services;
 import org.springframework.stereotype.Service;
 import spring.framework.spring5recipeapp.commands.UnitOfMeasureCommand;
 import spring.framework.spring5recipeapp.converters.UnitOfMeasureToUnitOfMeasureCommand;
-import spring.framework.spring5recipeapp.domain.UnitOfMeasure;
 import spring.framework.spring5recipeapp.repositories.UnitOfMeasureRepository;
 
 import java.util.Set;
