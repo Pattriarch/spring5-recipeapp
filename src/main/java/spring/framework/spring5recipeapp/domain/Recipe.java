@@ -59,17 +59,4 @@ public class Recipe {
         this.ingredients.add(ingredient);
         return this;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        Recipe recipe = (Recipe) o;
-        return id != null && Objects.equals(id, recipe.id);
-    }
-
-    @Override
-    public int hashCode() {
-        return getClass().hashCode();
-    }
 }
